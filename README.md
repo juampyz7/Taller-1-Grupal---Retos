@@ -3,4 +3,4 @@
 Integrantes:
 Jesus Maldonado
 Adrian Lopez
-Juan Pablo Loka
+Juan Pablo Loja
