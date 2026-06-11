@@ -64,6 +64,10 @@ public class Trabajo implements Serializable {
         return "Horas actualizadas: " + this.numeroHoras;
     }
 
+    public String aumentarPrecioMat(double precio) {
+        return "Este tipo de trabajo no tiene coste de material.";
+    }
+
     public double calcularCostoTrabajo() {
         return numeroHoras * 30;
     }

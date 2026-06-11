@@ -120,19 +120,10 @@ public class EjecutarTrabajo {
         Trabajo t = buscarTrabajo();
         if (t == null) return;
 
-        if (t instanceof ReparacionMecanica) {
-            System.out.print("Precio a agregar: ");
-            double precio = sc.nextDouble();
-            sc.nextLine();
-            System.out.println(((ReparacionMecanica) t).aumentarPrecioMat(precio));
-        } else if (t instanceof ReparacionChapasPintura) {
-            System.out.print("Precio a agregar: ");
-            double precio = sc.nextDouble();
-            sc.nextLine();
-            System.out.println(((ReparacionChapasPintura) t).aumentarPrecioMat(precio));
-        } else {
-            System.out.println("Las revisiones no tienen coste de material.");
-        }
+        System.out.print("Precio a agregar: ");
+        double precio = sc.nextDouble();
+        sc.nextLine();
+        System.out.println(t.aumentarPrecioMat(precio));
     }
 
     static void menuFinalizarTrabajo() {
